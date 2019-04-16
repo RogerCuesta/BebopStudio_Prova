@@ -1,20 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
+                <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 <link rel="stylesheet" href="css/style1.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/3.0.0/fetch.min.js"></script>
-
 <script src="JS/scripts.js"></script>
 <title>Bebop Studio</title>
 </head>
 <body>
 
-<div class="cabecera">
-        <img src="foto1.png" alt="Snow" style="width:100%;">
-        <p class="titulo_cabezera"></p>
+<div class="wrapper">
+
+
+<div id="cabecera">
+ <p id="titulo_cabezera"></p>
+ <img id="img_cabezera" style="width:100%;">       
 </div>
 
+<div id="cuerpo_1">
+ <p id="txt_1"></p>
+</div>
+
+<div class="flex-container">
+    <div class="column flex-item">
+        <img id="img_content1" style="width:100%;">
+    </div>
+    <div class="column flex-item">
+            <p id="title_content1" class="title"> </p>
+            <p id="desc_content1"> </p>
+    </div>
+</div>
+
+
+
+<div class="flex-container reverse">
+    <div class="column flex-item">
+            <p id="title_content2" class="title"> </p>
+            <p id="desc_content2"> </p>
+    </div>
+    <div class="column flex-item">
+        <img id="img_content2" style="width:100%;">
+    </div>
+</div>
+
+
+  
+</div>
 </body>
 </html>
