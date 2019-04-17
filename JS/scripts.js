@@ -2,9 +2,13 @@ $(function() {
     $.getJSON('https://gist.githubusercontent.com/RogerCuesta/0f3153d98f8170deb656f8a2288f4613/raw/091f14c0dbb475333ae86d0dade4cb79262c4164/test.json', function(json) {
     console.log(json);
     
-    document.getElementById("titulo_cabezera").innerHTML = json.title;
+    
 
-    document.getElementById("img_cabezera").src=json.imgPath;
+    var res = json.title.split(",");
+
+    document.getElementById("titulo_cabezera").innerHTML = res[0] + ",</br>" + res[1];
+
+    document.getElementById('cabecera').style.backgroundImage = 'url('+ json.imgPath +')';
 
     document.getElementById("txt_1").innerHTML = json.description;
 

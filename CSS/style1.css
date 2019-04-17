@@ -15,19 +15,29 @@ body{
 
 /* Container holding the image and the text */
 #cabecera {
-    position: relative;
-    text-align: center;
-    color: #546575;
+  position: relative;
+  text-align: center;
+  color: #546575;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  min-height: 400px;
   }
 
-/* Titulo Cabezera */
-#titulo_cabezera {
-    position: absolute;
-    font-size: 30px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.center{
+  position: absolute;
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+hr {
+  height: 3px;
+  border: none;
+  width: 50%;
+
+}
 
   #txt_1{
     text-align: justify;
