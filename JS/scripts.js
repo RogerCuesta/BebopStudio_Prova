@@ -1,7 +1,5 @@
 $('document').ready(function(){
     $(document.body).addClass('fadeIn time');
-    read_data();
-    
 });
 
 
@@ -9,7 +7,7 @@ $(document.body).fadeIn('slow'), function(){
     
  };
 
- var read_data =   $.getJSON('https://gist.githubusercontent.com/RogerCuesta/0f3153d98f8170deb656f8a2288f4613/raw/091f14c0dbb475333ae86d0dade4cb79262c4164/test.json', function(json) {
+$.getJSON('https://gist.githubusercontent.com/RogerCuesta/0f3153d98f8170deb656f8a2288f4613/raw/091f14c0dbb475333ae86d0dade4cb79262c4164/test.json', function(json) {
  
         var res = json.title.split(",");
     
