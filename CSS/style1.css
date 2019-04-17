@@ -6,10 +6,10 @@ body{
 .wrapper{
   display: flex;
   flex-flow: row wrap;
+  padding: 30px;
 }
 
 .wrapper > * {
-  padding: 10px;
   flex: 1 100%;
 }
 
@@ -63,14 +63,12 @@ hr {
 .flex-container{
   padding: 0;
   margin:0;
-
- display: flex;
+  display: flex;
 }
 
 .flex-item{
   width: 100%;
   justify-content: center;
-  text-align: justify;
   flex-direction: column;
   display: flex;
   padding: 10px;
@@ -83,4 +81,32 @@ hr {
   .reverse{
     flex-direction: column-reverse;
   }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn;
+  animation: fadeIn;
+  opacity: 1;
+}
+
+.time {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s
 }
